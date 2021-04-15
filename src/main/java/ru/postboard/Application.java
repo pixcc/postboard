@@ -8,7 +8,7 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
 import ru.postboard.interceptor.SecurityInterceptor;
 
 @SpringBootApplication
-public class WpApplication implements WebMvcConfigurer {
+public class Application implements WebMvcConfigurer {
     private SecurityInterceptor securityInterceptor;
 
     @Autowired
@@ -22,6 +22,6 @@ public class WpApplication implements WebMvcConfigurer {
     }
 
     public static void main(String[] args) {
-        SpringApplication.run(WpApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 }
